@@ -48,8 +48,12 @@ hr{
     align-items: flex-start;
     gap: 16px;
 }
-
-
+.post-content img {
+    display: flex;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50px;
+}
 .post-text {
     border: 3px solid #000;
     border-radius: 50px;
@@ -76,7 +80,7 @@ a{
     display: flex;
     flex-direction: column;
     flex: 1 1 0;
-    gap: 24px; 
+    gap: 24px; /* space between post and bottom-dashboard */
 }
 
 .dashboard {
@@ -88,7 +92,7 @@ a{
     box-shadow: 0 2px 8px #0001;
     min-height: 300px;
     margin-top: 20px;
-    margin-bottom: 0; 
+    margin-bottom: 0; /* Add or ensure this is set */
 }
 .dashboard img {
     width: 100%;
@@ -137,4 +141,79 @@ strong {
     font-weight: bold;
     color: #000000f8;
     font-size: 32px;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .main-flex {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .dashboard {
+    width: 100%;
+    margin-top: 24px;
+  }
+  .post {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .post-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .post-content img {
+    max-width: 100px;
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 32px;
+    padding: 6px;
+  }
+  .post-text {
+    font-size: 20px;
+    padding: 6px;
+  }
+  .dashboard img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .header-content h1 {
+    font-size: 28px;
+  }
+  .header-content a {
+    font-size: 20px;
+  }
+  .post {
+    padding: 4px;
+  }
+  h2 {
+    font-size: 22px;
+    padding: 4px;
+  }
+  .post-text {
+    font-size: 16px;
+    padding: 4px;
+  }
+  .dashboard {
+    padding: 8px;
+    min-height: unset;
+  }
+  .dashboard p {
+    font-size: 16px;
+  }
+  .bottom img {
+    width: 100%;
+    height: auto;
+  }
 }
