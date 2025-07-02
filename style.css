@@ -48,12 +48,8 @@ hr{
     align-items: flex-start;
     gap: 16px;
 }
-.post-content img {
-    display: flex;
-    max-width: 150px;
-    height: auto;
-    border-radius: 50px;
-}
+
+
 .post-text {
     border: 3px solid #000;
     border-radius: 50px;
