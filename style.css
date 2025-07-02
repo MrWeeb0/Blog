@@ -80,7 +80,7 @@ a{
     display: flex;
     flex-direction: column;
     flex: 1 1 0;
-    gap: 24px; /* space between post and bottom-dashboard */
+    gap: 24px;
 }
 
 .dashboard {
@@ -92,7 +92,7 @@ a{
     box-shadow: 0 2px 8px #0001;
     min-height: 300px;
     margin-top: 20px;
-    margin-bottom: 0; /* Add or ensure this is set */
+    margin-bottom: 0; 
 }
 .dashboard img {
     width: 100%;
@@ -143,7 +143,6 @@ strong {
     font-size: 32px;
 }
 
-/* Responsive Design */
 @media (max-width: 1100px) {
   .main-flex {
     flex-direction: column;
@@ -157,6 +156,21 @@ strong {
     margin-left: 0;
     margin-right: 0;
   }
+  h2 {
+    font-size: 36px;
+  }
+  .post-text {
+    font-size: 22px;
+  }
+  .dashboard p {
+    font-size: 20px;
+  }
+  strong {
+    font-size: 26px;
+  }
+  em {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -169,16 +183,25 @@ strong {
     margin-bottom: 12px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 28px;
     padding: 6px;
   }
   .post-text {
-    font-size: 20px;
+    font-size: 18px;
     padding: 6px;
   }
   .dashboard img {
     max-width: 100%;
     height: auto;
+  }
+  .dashboard p {
+    font-size: 16px;
+  }
+  strong {
+    font-size: 20px;
+  }
+  em {
+    font-size: 20px;
   }
 }
 
@@ -189,20 +212,20 @@ strong {
     gap: 8px;
   }
   .header-content h1 {
-    font-size: 28px;
+    font-size: 22px;
   }
   .header-content a {
-    font-size: 20px;
+    font-size: 16px;
   }
   .post {
     padding: 4px;
   }
   h2 {
-    font-size: 22px;
+    font-size: 16px;
     padding: 4px;
   }
   .post-text {
-    font-size: 16px;
+    font-size: 12px;
     padding: 4px;
   }
   .dashboard {
@@ -210,10 +233,16 @@ strong {
     min-height: unset;
   }
   .dashboard p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .bottom img {
     width: 100%;
     height: auto;
+  }
+  strong {
+    font-size: 14px;
+  }
+  em {
+    font-size: 14px;
   }
 }
