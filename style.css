@@ -80,7 +80,7 @@ a{
     display: flex;
     flex-direction: column;
     flex: 1 1 0;
-    gap: 24px; /* space between post and bottom-dashboard */
+    gap: 24px; 
 }
 
 .dashboard {
@@ -92,7 +92,7 @@ a{
     box-shadow: 0 2px 8px #0001;
     min-height: 300px;
     margin-top: 20px;
-    margin-bottom: 0; /* Add or ensure this is set */
+    margin-bottom: 0; 
 }
 .dashboard img {
     width: 100%;
